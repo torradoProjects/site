@@ -599,7 +599,6 @@ progress {
 
 .img-fluid {
   image-rendering: pixelated; 
-  image-rendering: crisp-edges; 
   max-width: 100%;
   height: auto;
 }
