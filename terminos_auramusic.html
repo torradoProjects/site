@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080909">
+  <meta name="description" content="Términos y condiciones de uso de AuraMusic, de TorradoProjects.">
+  <title>Términos y condiciones | AuraMusic</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080909;
+      --surface: #101112;
+      --surface-soft: #17191b;
+      --border: #292c2f;
+      --text: #f2f3f5;
+      --muted: #a6abb3;
+      --accent: #dfe2e6;
+      --badge: #30343a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at top, rgba(70, 74, 80, .12), transparent 48%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .topbar {
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background: rgba(8, 9, 9, .88);
+    }
+
+    .topbar-inner {
+      width: min(100% - 40px, 1080px);
+      min-height: 76px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 750;
+      letter-spacing: -.035em;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #34373b;
+      border-radius: 13px;
+      background: linear-gradient(145deg, #292c30, #151719);
+      box-shadow: 0 5px 18px rgba(0,0,0,.22);
+    }
+
+    .brand-icon svg { width: 22px; height: 22px; }
+
+    .page-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #c6cbd2;
+      font-size: .9rem;
+    }
+
+    .page-label svg { width: 19px; height: 19px; }
+
+    main {
+      width: min(100% - 40px, 940px);
+      margin: 34px auto 0;
+    }
+
+    .document {
+      padding: clamp(24px, 5vw, 44px);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(19,21,23,.98), rgba(12,13,14,.98));
+      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+    }
+
+    .document-header {
+      padding-bottom: 24px;
+      margin-bottom: 26px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.45rem, 3.5vw, 2rem);
+      line-height: 1.25;
+      letter-spacing: -.035em;
+      font-weight: 760;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: .98rem;
+    }
+
+    .terms-section {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 18px;
+      margin: 0 0 27px;
+      scroll-margin-top: 24px;
+    }
+
+    .terms-section:last-child { margin-bottom: 0; }
+
+    .number {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #41454b;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #3b4047, #272b30);
+      color: #f5f6f7;
+      font-weight: 750;
+      font-size: 1rem;
+    }
+
+    h2 {
+      margin: 3px 0 8px;
+      font-size: 1.02rem;
+      line-height: 1.45;
+      letter-spacing: .005em;
+      font-weight: 750;
+    }
+
+    .section-content {
+      color: #cbd0d7;
+      font-size: .96rem;
+      overflow-wrap: anywhere;
+    }
+
+    .section-content p { margin: 0 0 10px; }
+    .section-content p:last-child { margin-bottom: 0; }
+
+    .section-content ul {
+      margin: 9px 0 0;
+      padding-left: 21px;
+    }
+
+    .section-content li {
+      padding-left: 2px;
+      margin: 0 0 9px;
+    }
+
+    .section-content li:last-child { margin-bottom: 0; }
+
+    .section-content strong {
+      color: #edf0f3;
+      font-weight: 700;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      margin-top: 10px;
+      padding: 10px 13px;
+      border: 1px solid #30343a;
+      border-radius: 13px;
+      background: var(--surface-soft);
+      color: #dfe3e8;
+      text-decoration: none;
+      font-size: .9rem;
+      transition: background .2s ease, border-color .2s ease;
+    }
+
+    .contact-link:hover {
+      background: #222529;
+      border-color: #555a62;
+    }
+
+    .contact-link svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    footer {
+      width: min(100% - 40px, 940px);
+      margin: 34px auto 0;
+      padding: 0 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      color: #858b94;
+      font-size: .86rem;
+      text-align: center;
+    }
+
+    footer::before, footer::after {
+      content: "";
+      width: 56px;
+      height: 1px;
+      background: #34383d;
+    }
+
+    @media (max-width: 600px) {
+      .topbar-inner {
+        width: min(100% - 28px, 1080px);
+        min-height: 68px;
+      }
+
+      .brand { font-size: 1.05rem; gap: 9px; }
+      .brand-icon { width: 38px; height: 38px; border-radius: 11px; }
+      .page-label { font-size: .78rem; gap: 7px; }
+      .page-label svg { display: none; }
+
+      main {
+        width: min(100% - 24px, 940px);
+        margin-top: 18px;
+      }
+
+      .document {
+        padding: 23px 18px;
+        border-radius: 17px;
+      }
+
+      .document-header { padding-bottom: 19px; margin-bottom: 22px; }
+
+      .terms-section {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 12px;
+        margin-bottom: 25px;
+      }
+
+      .number {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        font-size: .9rem;
+      }
+
+      h2 { margin-top: 2px; font-size: .96rem; }
+      .section-content { font-size: .92rem; }
+      .contact-link { font-size: .82rem; }
+      footer { width: min(100% - 24px, 940px); gap: 10px; font-size: .78rem; }
+      footer::before, footer::after { width: 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#inicio" aria-label="AuraMusic, inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <ellipse cx="6" cy="18" rx="3" ry="2.3" fill="currentColor"/>
+            <ellipse cx="17" cy="16" rx="3" ry="2.3" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>AuraMusic</span>
+      </a>
+      <div class="page-label" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="m3 10 9-7 9 7M5.5 9v11h5v-6h3v6h5V9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Términos y Condiciones</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <article class="document">
+      <header class="document-header">
+        <h1>TÉRMINOS Y CONDICIONES DE USO - AURAMUSIC</h1>
+        <p class="meta">Titular: TorradoProjects</p>
+        <p class="meta">Origen: Colombia</p>
+      </header>
+
+      <section class="terms-section" id="aceptacion">
+        <div class="number" aria-hidden="true">1</div>
+        <div>
+          <h2>ACEPTACIÓN DE LOS TÉRMINOS</h2>
+          <div class="section-content">
+            <p>Al descargar, instalar y utilizar la aplicación AuraMusic, el usuario acepta de manera expresa y sin reservas los presentes Términos y Condiciones. Si no está de acuerdo con alguno de ellos, debe abstenerse de utilizar la aplicación.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="servicio">
+        <div class="number" aria-hidden="true">2</div>
+        <div>
+          <h2>DESCRIPCIÓN DEL SERVICIO</h2>
+          <div class="section-content">
+            <p>AuraMusic es un reproductor de música local offline diseñado para organizar y reproducir los archivos de audio almacenados localmente en el dispositivo del usuario.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="permisos">
+        <div class="number" aria-hidden="true">3</div>
+        <div>
+          <h2>PERMISOS Y USO DE FUNCIONES ESPECIALES</h2>
+          <div class="section-content">
+            <p>Para garantizar el correcto funcionamiento de las características avanzadas solicitadas por el usuario, AuraMusic requiere los siguientes permisos:</p>
+            <ul>
+              <li><strong>Modificación de Ajustes del Sistema (WRITE_SETTINGS):</strong><br>
+                Se utiliza exclusivamente para permitir al usuario establecer una canción de su biblioteca local como tono de llamada, notificación o alarma del dispositivo. Este permiso solo se ejecuta tras la solicitud explícita e intencionada del usuario.</li>
+              <li><strong>Acceso y Gestión de Archivos de Audio (Almacenamiento / MediaStore):</strong><br>
+                Se requiere para escanear, mostrar y reproducir la música guardada en el dispositivo, así como para la función de eliminación de canciones. La eliminación de un archivo es voluntaria, definitiva e irreversible, y se realiza únicamente bajo confirmación directa del usuario.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="privacidad">
+        <div class="number" aria-hidden="true">4</div>
+        <div>
+          <h2>PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES</h2>
+          <div class="section-content">
+            <p>En cumplimiento de la legislación colombiana (Ley 1581 de 2012 de Protección de Datos Personales) y las Políticas para Desarrolladores de Google Play:</p>
+            <ul>
+              <li>AuraMusic opera de forma offline y NO recopila, no almacena en servidores externos, no comparte ni vende información personal ni archivos multimedia de los usuarios.</li>
+              <li>No se realiza ningún rastreo ni perfilamiento de hábitos de escucha.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="propiedad">
+        <div class="number" aria-hidden="true">5</div>
+        <div>
+          <h2>PROPIEDAD INTELECTUAL Y DERECHOS DE AUTOR</h2>
+          <div class="section-content">
+            <ul>
+              <li>La aplicación AuraMusic, sus logotipos y código fuente son propiedad exclusiva de TorradoProjects.</li>
+              <li>Los derechos de autor de las canciones y archivos de audio pertenecen a sus respectivos creadores y titulares de derechos. TorradoProjects no almacena ni distribuye música protegida por derechos de autor a través de servidores externos.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="responsabilidad">
+        <div class="number" aria-hidden="true">6</div>
+        <div>
+          <h2>LIMITACIÓN DE RESPONSABILIDAD</h2>
+          <div class="section-content">
+            <p>AuraMusic se proporciona "tal cual". TorradoProjects no se hace responsable por la eliminación accidental de archivos realizada voluntariamente por el usuario dentro de la aplicación.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-section" id="contacto">
+        <div class="number" aria-hidden="true">7</div>
+        <div>
+          <h2>SOPORTE Y CONTACTO</h2>
+          <div class="section-content">
+            <p>Para soporte o sugerencias, visite nuestro sitio web oficial:</p>
+            <a class="contact-link" href="https://torradoprojects.github.io/site/index.html" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>https://torradoprojects.github.io/site/index.html</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <span>AuraMusic</span>
+    <span aria-hidden="true">•</span>
+    <span>TorradoProjects</span>
+  </footer>
+</body>
+</html>
